@@ -1,0 +1,38 @@
+<!doctype html>  
+<html>  
+  <head>  
+    <meta charset="utf-8"> <!-- 设置字符编码 -->  
+    <title>留言板 Message Board</title> <!-- 网页标题 -->  
+    <link rel="stylesheet" href="style.css"> <!-- 链接外部样式表 -->  
+  </head>  
+  <body>  
+    <div class="container"> <!-- 主容器，用于控制整个留言板的布局 -->  
+      <h1>留言板 Message Board</h1> <!-- 标题 -->  
+      <h2>完成填写后，点击提交即可，快来给我留言吧！</h2> <!-- 说明文字 -->  
+  
+      <!-- 表格行样式的布局容器，用于垂直排列表单元素 -->  
+      <div class="tableRow">  
+        <p>昵称: <input type="text" name="name" value="" required></p> <!-- 昵称输入框 -->  
+      </div>  
+      <div class="tableRow">  
+        <p>电话: <input type="text" name="telephone" value="" placeholder="非必填"></p> <!-- 电话输入框 -->  
+      </div>  
+      <div class="tableRow">  
+        <p>地址: <input type="text" name="address" value="" placeholder="非必填"></p> <!-- 地址输入框 -->  
+      </div>  
+      <div class="tableRow">  
+        <p>邮箱: <input type="text" name="email" value="" required></p> <!-- 邮箱输入框 -->  
+      </div>  
+      <div class="tableRow">  
+        <p>留言: <textarea name="comments"></textarea></p> <!-- 留言框 -->  
+      </div>  
+      <div class="tableRow"> <!-- 提交按钮行 -->  
+        <!-- 这里通常只需要一个提交按钮，两个按钮可能会导致用户混淆 -->  
+        <p><input type="submit" value="保存"> <input type="submit" value="提交"></p>   
+      </div>  
+    </form> <!-- 表单结束标签 -->  
+    </div>  <!-- 主容器结束 -->  
+  </body>  
+</html>
+
+

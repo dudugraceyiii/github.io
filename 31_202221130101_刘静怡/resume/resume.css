@@ -1,0 +1,85 @@
+body {
+  font-family:     Verdana, Geneva, Arial, sans-serif;
+  font-size:       100%;
+}
+
+  .content-wrapper {  
+    display: flex;  
+    align-items: flex-start; /* 上下对齐（默认就是flex-start）*/  
+    justify-content: space-between; /* 左右间隔（如果需要的话）*/  
+  }  
+    
+  .image-container,  
+  .text-container {  
+    flex: 0 0 50%; /* 设定两边各占50%宽度 */  
+    padding: 10px; /* 设置内边距，即图片和文字之间的间距 */  
+    box-sizing: border-box; /* 确保padding不会增加元素的总宽度 */  
+  }  
+    
+  .image {  
+    width: 160px; /* 图片宽度设置为容器宽度 */  
+    height: auto; /* 图片高度自动以保持比例 */  
+  }  
+    
+  .text-container p {  
+    margin: 0; /* 移除段落默认的上下外边距 */
+    font-size: large;
+    line-height: 2;  
+  }
+
+h1, h2 {
+  color:           #5a8ef6;
+  border-bottom:   thin dotted #0c0000;
+}
+h1 {
+  font-family:     "Emblema One", sans-serif;
+  font-size:       220%;
+}
+h2 {
+  font-size:       180%;
+  font-weight:     normal;
+}
+
+table {
+  margin-left:      20px;
+  margin-right:     20px;
+  border:           thin solid #9dbed3;
+  caption-side:     bottom;
+  border-collapse:  collapse;
+}
+
+table table th {
+  background-color: white;
+}
+
+td, th {
+  border:           thin dotted gray;
+  padding:          5px;
+}
+
+th {
+  background-color: #3e78bb;
+}
+
+.cellcolor {
+  background-color: #a2c7f2;
+}
+
+caption {
+  font-style:       italic;
+  padding-top:      8px;
+}
+
+.center {
+  text-align:       center;
+}
+
+.right {
+  text-align:       left;
+}
+
+li {
+  /* list-style-image: url(images/backpack.gif); */
+  padding-top:      5px;
+
+}

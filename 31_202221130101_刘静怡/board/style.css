@@ -1,0 +1,46 @@
+/* 设置body的背景色、背景图片以及外边距 */  
+body {  
+	background: #2549a5 url(images/background.gif) top left; /* 背景色和背景图片 */  
+	margin: 20px; /* 外边距 */  
+}  
+  
+/* 设置form的样式，使其以表格形式显示，并添加内边距、边框和背景色 */  
+form {  
+	display: table; /* 以表格形式显示 */  
+	padding: 10px; /* 内边距 */  
+	border: thin dotted #3350d0; /* 边框样式 */  
+	background-color: #b4d9f3; /* 背景色 */  
+}  
+  
+/* 设置form内的textarea元素的宽度和高度 */  
+form textarea {  
+	width: 500px; /* 宽度 */  
+	height: 200px; /* 高度 */  
+}  
+  
+/* 设置div.tableRow的样式，使其以表格行的形式显示 */  
+div.tableRow {  
+	display: table-row; /* 以表格行形式显示 */  
+}  
+  
+/* 设置div.tableRow内的p元素的样式，使其以表格单元格的形式显示，并设置垂直对齐方式和内边距 */  
+div.tableRow p {  
+	display: table-cell; /* 以表格单元格形式显示 */  
+	vertical-align: top; /* 垂直对齐方式 */  
+	padding: 3px; /* 内边距 */  
+}  
+  
+/* 设置div.tableRow内的第一个p元素（通常是标签部分）的文本对齐方式 */  
+div.tableRow p:first-child {  
+	text-align: left; /* 文本左对齐 */  
+}  
+  
+/* 设置类名为heading的p元素的字体加粗 */  
+p.heading {  
+	font-weight: bold; /* 字体加粗 */  
+}  
+  
+/* 设置h1元素的文字颜色 */  
+h1 {  
+	color: #fff; /* 文字颜色为白色 */  
+}

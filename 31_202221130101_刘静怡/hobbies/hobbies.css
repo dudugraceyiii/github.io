@@ -1,0 +1,86 @@
+/* 通用样式，清除所有元素的默认内外边距 */  
+* {  
+    margin: 0;  
+    padding: 0;  
+}  
+  
+/* 设置body的背景颜色 */  
+body{  
+    background-color: rgb(179, 217, 252);  
+}  
+  
+/* 定义.about类的样式 */  
+.about {  
+    width: 100%; /* 宽度设置为100%，占据父元素全部宽度 */  
+    height: 100%; /* 高度设置为100% */  
+    overflow: hidden; /* 隐藏超出容器的内容 */  
+    position: relative; /* 设置相对定位，使得子元素可以使用绝对定位 */  
+    perspective: 340px; /* 为3D转换元素设置观察者和Z=0平面的距离，以创建3D空间效果 */  
+}  
+  
+/* 定义.about_bgc类的样式，这通常是一个背景元素或图片容器 */  
+.about_bgc {  
+    height: 800px; /* 设置高度为800px */  
+    width: 100%; /* 宽度设置为100%，占据父元素全部宽度 */    
+}  
+  
+/* 定义.about_tit类的样式，这通常是一个标题或文本元素 */  
+.about_tit {    
+    position: absolute;  /* 设置绝对定位，相对于最近的已定位祖先（非static）进行定位 */  
+    color: white;  /* 文本颜色为白色 */  
+    font-size: 80px; /* 修改字体大小为80px */  
+    font-weight: 550; /* 字体粗细 */  
+    left: 0;  /* 距离容器左侧为0 */  
+    right: 0;  /* 距离容器右侧为0 */  
+    width: 800px;  /* 设置宽度为800px */  
+    margin: auto;  /* 水平自动居中（与left, right结合使用） */  
+    text-align: center;  /* 文本水平居中对齐 */  
+}  
+  
+/* 第一个标题 */  
+.about_tit:first-of-type {  
+    top: 280px; 
+}  
+  
+/* 第二个标题 */  
+.about_tit:nth-of-type(2) {  
+    top: 380px; /* 第二个标题的位置，确保它与第一个标题有足够的间距 */  
+}
+
+
+
+
+.container {  
+    display: flex;  
+    align-items: flex-start; /* 保证上下对齐 */  
+    margin-bottom: 20px; /* 为每个容器添加一些间距 */  
+}  
+  
+.image-container {  
+    flex: 1; /* 图片容器占据一半空间 */  
+    margin-right: 20px; /* 图片和文字之间的间距 */  
+}  
+  
+.image-container img {  
+    width: 100%; /* 图片宽度占满容器 */  
+    height: auto; /* 高度自动，保持图片原始比例 */  
+    margin: 100px;
+}  
+  
+.text-container {  
+    flex: 1; /* 文字容器占据一半空间 */  
+    margin: 100px;
+    margin-left: 200px;
+}  
+  
+.title {  
+    font-size: 100px; /* 标题字体大小 */ 
+    color: midnightblue; 
+    font-weight: bold; /* 标题字体加粗 */  
+    margin-bottom: 1.6em; /* 标题和正文之间的间距，根据字体大小调整，这里大约是两行文字的高度 */  
+}  
+  
+.content {  
+    font-size: 50px; /* 正文字体大小 */  
+    line-height: 1.6; /* 设置行高，这里设置为与标题间距相同的值以保持一致性 */  
+}
